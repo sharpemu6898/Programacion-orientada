@@ -21,4 +21,18 @@ public class Client extends Person{
     public void setSweetDelicacies(SweetDelicacies sweetDelicacies) {
         this.sweetDelicacies = sweetDelicacies;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public SweetDelicacies getSweetDelicacies() {
+        return sweetDelicacies;
+    }
+
+    public ArrayList<Invoice> getInvoices() {
+        return invoices;
+    }
+
+    
 }

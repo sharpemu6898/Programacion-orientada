@@ -65,4 +65,7 @@ public class SweetDelicacies {
         return this.clients.get(index);
     }
     
+    public Employee getEmployee(int index) {
+        return this.employees.get(index);
+    }
 }

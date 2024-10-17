@@ -17,8 +17,7 @@ public class Invoice {
     private LocalDate date;
     private float total;
     
-    public Invoice(Client client, ArrayList<Product> products, ArrayList<Integer> quantities, LocalDate date,
-        float total) {
+    public Invoice(Client client, ArrayList<Product> products, ArrayList<Integer> quantities, LocalDate date) {
         this.id = Invoice.ID;
         this.client = client;
         this.products = products;

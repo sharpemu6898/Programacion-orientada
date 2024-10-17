@@ -44,6 +44,14 @@ public class SweetDelicacies {
         return false;
     }
     
+    public boolean addInvoice(Invoice invoice) {
+        if (!this.invoices.contains(invoice)){
+            this.invoices.add(invoice);
+            return true;
+        }
+        return false;
+    }
+    
     public void addProduct(Product product) {
         this.products.add(product);
     }

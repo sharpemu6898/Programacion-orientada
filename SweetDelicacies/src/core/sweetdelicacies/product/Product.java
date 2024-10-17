@@ -17,3 +17,4 @@ public abstract class Product {
         this.fabricationDate = fabricationDate;
     }
 }
+

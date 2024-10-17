@@ -15,11 +15,23 @@ import core.sweetdelicacies.product.Product;
  * @author AAAAA
  */
 public class Invoice {
-    int id;
-    Client client;
-    ArrayList<Product> products;
-    ArrayList<quantities> int ;
-    LocalDate date;
-    float total;
+    private int id;
+    private Client client;
+    private ArrayList<Product> products;
+    private ArrayList<Integer> quantities ;
+    private LocalDate date;
+    private float total;
+    public Invoice(int id, Client client, ArrayList<Product> products, ArrayList<Integer> quantities, LocalDate date,
+            float total) {
+        this.id = id;
+        this.client = client;
+        this.products = products;
+        this.quantities = quantities;
+        this.date = date;
+        this.total = total;
+    }
+
+    
+
     
 }

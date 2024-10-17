@@ -34,5 +34,11 @@ public class Client extends Person{
         return invoices;
     }
 
-    
+    public boolean addInvoice(Invoice invoice) {
+        if (!this.invoices.contains(invoice)){
+            this.invoices.add(invoice);
+            return true;
+        }
+        return false;
+    }
 }

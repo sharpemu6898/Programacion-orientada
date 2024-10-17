@@ -1,10 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-
-
 package core.sweetdelicacies;
 
 import java.util.ArrayList;
@@ -49,6 +42,7 @@ public class SweetDelicacies {
         Invoice invoice = new Invoice(client, products, quantities, date);
         if (!this.invoices.contains(invoice)){
             this.invoices.add(invoice);
+            client.addInvoice(invoice);
             return true;
         }
         return false;

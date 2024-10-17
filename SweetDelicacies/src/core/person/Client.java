@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.person;
 
-/**
- *
- * @author AAAAA
- */
-public class Client {
+import core.sweetdelicacies.Invoice;
+import core.sweetdelicacies.SweetDelicacies;
+import java.util.ArrayList;
+
+public class Client extends Person{
     
+    private String address;
+    private SweetDelicacies sweetDelicacies;
+    private ArrayList<Invoice> invoices;
+    
+     public Client(int id, String nombre, String address) {
+        super(id, nombre);
+        this.address = address;
+        this.sweetDelicacies = null;
+        this.invoices = new ArrayList<>();
+    }
+
+    public void setSweetDelicacies(SweetDelicacies sweetDelicacies) {
+        this.sweetDelicacies = sweetDelicacies;
+    }
 }

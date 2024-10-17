@@ -6,11 +6,11 @@ import java.time.LocalDate;
 public abstract class Product {
     
     protected String name;
-    protected float weight;
-    protected float unitPrice;
+    protected double weight;
+    protected double unitPrice;
     protected LocalDate fabricationDate;
     
-    public Product(String name, float weight, float unitPrice, LocalDate fabricationDate) {
+    public Product(String name, double weight, double unitPrice, LocalDate fabricationDate) {
         this.name = name;
         this.weight = weight;
         this.unitPrice = unitPrice;

@@ -28,9 +28,8 @@ public class Employee extends Person{
     }
     
     public boolean addTask(Task taks) {
-        if (!this.employees.contains(employee)){
-            this.employees.add(employee);
-            employee.setSweetDelicacies(this);
+        if (!this.tasks.contains(taks)){
+            this.tasks.add(taks);
             return true;
         }
         return false;

@@ -5,6 +5,7 @@ import core.person.Employee;
 import core.sweetdelicacies.SweetDelicacies;
 import core.sweetdelicacies.product.Candy;
 import core.sweetdelicacies.product.Chocolate;
+import core.sweetdelicacies.product.Cookie;
 import core.sweetdelicacies.product.Product;
 import core.sweetdelicacies.task.Task;
 import core.sweetdelicacies.utils.Area;

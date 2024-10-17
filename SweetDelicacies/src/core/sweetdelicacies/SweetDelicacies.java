@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import core.person.Client;
 import core.person.Employee;
 import core.sweetdelicacies.product.Product;
+import java.time.LocalDate;
 
 public class SweetDelicacies {
     private ArrayList<Client> clients;
@@ -44,7 +45,8 @@ public class SweetDelicacies {
         return false;
     }
     
-    public boolean addInvoice(Invoice invoice) {
+    public boolean addInvoice(Client client, ArrayList<Product> products, ArrayList<Integer> quantities, LocalDate date) {
+        Invoice invoice = new Invoice(client, products, quantities, date);
         if (!this.invoices.contains(invoice)){
             this.invoices.add(invoice);
             return true;

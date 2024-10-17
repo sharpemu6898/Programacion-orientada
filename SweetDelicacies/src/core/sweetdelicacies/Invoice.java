@@ -28,4 +28,8 @@ public class Invoice {
         //ID autoincremental
         Invoice.ID++;
     }
+    
+    public void setClient(Client Client) {
+        this.client = client;
+    }
 }

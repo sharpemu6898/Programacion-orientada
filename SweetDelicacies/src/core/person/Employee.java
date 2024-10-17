@@ -11,7 +11,7 @@ public class Employee extends Person{
     private String position;
     private int aging;
     private Area area;
-    private SweetDelicacies sweetdelicacies;
+    private SweetDelicacies sweetDelicacies;
     private ArrayList<Task> tasks;
 
     public Employee(int id, String name, String position, int aging, Area area) {
@@ -19,7 +19,7 @@ public class Employee extends Person{
         this.position = position;
         this.aging = aging;
         this.area = area;
-        this.sweetdelicacies = null;
+        this.sweetDelicacies = null;
         this.tasks = new ArrayList<>();
     }
     

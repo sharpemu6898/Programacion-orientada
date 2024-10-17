@@ -26,4 +26,14 @@ public class Employee extends Person{
     public void setSweetDelicacies(SweetDelicacies sweetDelicacies) {
         this.sweetDelicacies = sweetDelicacies;
     }
+    
+    public boolean addTask(Task taks) {
+        if (!this.employees.contains(employee)){
+            this.employees.add(employee);
+            employee.setSweetDelicacies(this);
+            return true;
+        }
+        return false;
+    }
+    
 }

@@ -43,6 +43,7 @@ public class SweetDelicacies {
         if (!this.invoices.contains(invoice)){
             this.invoices.add(invoice);
             client.addInvoice(invoice);
+            invoice.setClient(client);
             return true;
         }
         return false;

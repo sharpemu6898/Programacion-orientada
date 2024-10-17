@@ -16,7 +16,14 @@ public class Employee extends Person{
 
     public Employee(int id, String name, String position, int aging, Area area) {
         super(id, name);
+        this.position = position;
+        this.aging = aging;
+        this.area = area;
+        this.sweetdelicacies = null;
+        this.tasks = new ArrayList<>();
+    }
+    
+    public void setSweetDelicacies(SweetDelicacies sweetDelicacies) {
+        this.sweetDelicacies = sweetDelicacies;
     }
 }
-
-new Employee(200200000, "Hildefons Abioye", "Production Manager", 12, Area.PRODUCTION)

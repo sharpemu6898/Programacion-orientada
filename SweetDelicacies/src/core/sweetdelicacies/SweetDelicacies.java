@@ -44,8 +44,15 @@ public class SweetDelicacies {
         return false;
     }
     
-    
     public void addProduct(Product product) {
         this.products.add(product);
     }
+    
+    public Product getProduct(int index) {
+        return this.products.get(index);
+    }
+    public Client getClient(int index) {
+        return this.clients.get(index);
+    }
+    
 }

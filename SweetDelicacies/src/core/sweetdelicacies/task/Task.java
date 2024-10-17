@@ -4,10 +4,14 @@
  */
 package core.sweetdelicacies.task;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author AAAAA
  */
 public class Task {
-    
+    int id;
+    LocalDate date;
+    int duration;
 }

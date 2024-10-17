@@ -44,4 +44,8 @@ public class SweetDelicacies {
         return false;
     }
     
+    
+    public void addProduct(Product product) {
+        this.products.add(product);
+    }
 }
